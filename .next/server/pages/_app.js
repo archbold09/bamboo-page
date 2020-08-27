@@ -112,9 +112,6 @@ __webpack_require__.r(__webpack_exports__);
 var external_react_ = __webpack_require__("cDcd");
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
 
-// EXTERNAL MODULE: ./styles/tailwind.css
-var tailwind = __webpack_require__("Rpix");
-
 // EXTERNAL MODULE: ./styles/globals.css
 var globals = __webpack_require__("zPlV");
 
@@ -272,7 +269,6 @@ var _app_jsx = external_react_default.a.createElement;
 
 
 
-
 function MyApp({
   Component,
   pageProps
@@ -281,13 +277,6 @@ function MyApp({
 }
 
 /* harmony default export */ var _app = __webpack_exports__["default"] = (MyApp);
-
-/***/ }),
-
-/***/ "Rpix":
-/***/ (function(module, exports) {
-
-
 
 /***/ }),
 
