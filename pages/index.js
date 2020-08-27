@@ -1,21 +1,8 @@
-import fetch from "isomorphic-unfetch";
-
-export const getStaticProps = async () => {
-  const response = await fetch("./api/products");
-  const { data: productList } = await response.json();
-  return {
-    props: {
-      productList
-    }
-  };
-};
-
-const Home = ({productList}) => {
-  console.log(productList)
+const Home = () => {
   return (
     <>
       <main>
-        {/* <section className="container mx-auto px-3">
+        <section className="container mx-auto px-3">
           <div className="flex justify-center items-center mx-2 my-6 sm-flex-col sm-text-center">
             <figure className="pr-2">
               <img
@@ -37,9 +24,9 @@ const Home = ({productList}) => {
 
         <section className="bg-green-100 my-6 px-3 border-2 border-green-200 border-solid rounded-lg">
           <div className="container mx-auto">
-            <h4 className="text-center text-3xl my-0 font-extrabold text-gray-900">
-              Productos
-            </h4>
+              <h4 className="text-center text-3xl my-0 font-extrabold text-gray-900">
+                Productos
+              </h4>
             <div className="flex justify-center items-center mx-2 flex-wrap">
               <div className="max-w-sm w-64 rounded overflow-hidden shadow-lg mx-2 my-2 text-center transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80 transition ease-in-out duration-200 text-gray-900">
                 <div className="bg-green-100">
@@ -55,9 +42,7 @@ const Home = ({productList}) => {
                   <h4 className="font-bold text-xl mb-2 font-extrabold text-gray-900">
                     CUPCAKES
                   </h4>
-                  <p className="font-extrabold text-gray-700">
-                    Precio: $16.000
-                  </p>
+                  <p class="font-extrabold text-gray-700">Precio: $16.000</p>
                 </div>
                 <div className="px-6 pt-4 pb-2 bg bg-white ">
                   <button className="bg-green-200 rounded-full px-3 py-2 font-semibold text-green-900 mr-2 mb-2">
@@ -80,9 +65,7 @@ const Home = ({productList}) => {
                   <h4 className="font-bold text-xl mb-2 font-extrabold text-gray-900">
                     CUPCAKES
                   </h4>
-                  <p className="font-extrabold text-gray-700">
-                    Precio: $16.000
-                  </p>
+                  <p class="font-extrabold text-gray-700">Precio: $16.000</p>
                 </div>
                 <div className="px-6 pt-4 pb-2 bg-white ">
                   <button className="bg-green-200 rounded-full px-3 py-2 font-semibold text-green-900 mr-2 mb-2">
@@ -105,9 +88,7 @@ const Home = ({productList}) => {
                   <h4 className="font-bold text-xl mb-2 font-extrabold text-gray-900">
                     CUPCAKES
                   </h4>
-                  <p className="font-extrabold text-gray-700">
-                    Precio: $16.000
-                  </p>
+                  <p class="font-extrabold text-gray-700">Precio: $16.000</p>
                 </div>
                 <div className="px-6 pt-4 pb-2 bg-white ">
                   <button className="bg-green-200 rounded-full px-3 py-2 font-semibold text-green-900 mr-2 mb-2">
@@ -130,9 +111,7 @@ const Home = ({productList}) => {
                   <h4 className="font-bold text-xl mb-2 font-extrabold text-gray-900">
                     CUPCAKES
                   </h4>
-                  <p className="font-extrabold text-gray-700">
-                    Precio: $16.000
-                  </p>
+                  <p class="font-extrabold text-gray-700">Precio: $16.000</p>
                 </div>
                 <div className="px-6 pt-4 pb-2 bg-white ">
                   <button className="bg-green-200 rounded-full px-3 py-2 font-semibold text-green-900 mr-2 mb-2">
@@ -171,9 +150,7 @@ const Home = ({productList}) => {
                 <ul className="flex justify-between items-center">
                   <li className="mx-1 my-1">
                     {" "}
-                    <span className="text-left text-gray-900 font-bold ">
-                      Métodos de pago
-                    </span>{" "}
+                    <span className="text-left text-gray-900 font-bold ">Métodos de pago</span>{" "}
                   </li>
 
                   <div className="flex">
@@ -198,7 +175,7 @@ const Home = ({productList}) => {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
       </main>
     </>
   );
