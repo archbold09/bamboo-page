@@ -1,4 +1,16 @@
+import { useEffect, useState } from "react";
+import Link from "next/link";
 const Home = () => {
+
+  const [productList, setProductList] = useState([]);
+  useEffect(() => {
+    fetch("/api/avo")
+      .then((response) => response.json())
+      .then(({ data, length }) => {
+        setProductList(data);
+      });
+  }, []);
+
   return (
     <>
       <main>
@@ -24,9 +36,9 @@ const Home = () => {
 
         <section className="bg-green-100 my-6 px-3 border-2 border-green-200 border-solid rounded-lg">
           <div className="container mx-auto">
-              <h4 className="text-center text-3xl my-0 font-extrabold text-gray-900">
-                Productos
-              </h4>
+            <h4 className="text-center text-3xl my-0 font-extrabold text-gray-900">
+              Productos
+            </h4>
             <div className="flex justify-center items-center mx-2 flex-wrap">
               <div className="max-w-sm w-64 rounded overflow-hidden shadow-lg mx-2 my-2 text-center transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80 transition ease-in-out duration-200 text-gray-900">
                 <div className="bg-green-100">
@@ -150,7 +162,9 @@ const Home = () => {
                 <ul className="flex justify-between items-center">
                   <li className="mx-1 my-1">
                     {" "}
-                    <span className="text-left text-gray-900 font-bold ">Métodos de pago</span>{" "}
+                    <span className="text-left text-gray-900 font-bold ">
+                      Métodos de pago
+                    </span>{" "}
                   </li>
 
                   <div className="flex">
