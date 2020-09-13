@@ -42,18 +42,18 @@ const Home = ({ productList }) => {
             </h4>
             <div className="flex justify-center items-center mx-2 flex-wrap">
               {productList.map((product) => (
-                <div className="max-w-sm w-64 rounded overflow-hidden shadow-lg mx-2 my-2 text-center transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80 transition ease-in-out duration-200 text-gray-900">
+                <div className="max-w-sm w-64 h-auto rounded overflow-hidden shadow-lg mx-2 my-2 text-center transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80 transition ease-in-out duration-200 text-gray-900">
                   <div className="bg-green-100">
                     <figure className="rounded-lg">
                       <img
-                        className="w-full px-4 py-4 object-cover"
+                        className="w-full px-4 py-4 object-cover h-56"
                         src={product.image}
                         alt="cakes-image"
                       />
                     </figure>
                   </div>
                   <div className="px-6 py-4 bg-white bg-white">
-                    <h4 className="font-bold text-xl mb-2 font-extrabold text-gray-900">
+                    <h4 className="font-bold text-lg mb-2 font-extrabold text-gray-800">
                       {product.name}
                     </h4>
                     <p class="font-extrabold text-gray-700">

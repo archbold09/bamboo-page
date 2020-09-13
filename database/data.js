@@ -11,14 +11,14 @@ const data = {
     name: "Fresas con crema 12oz",
     detail:"Toppings adicionales: Oreo, Cobertura de chocolate, Brownie, Arequipe.",
     price: 8.000,
-    image: "/images/2.jpeg",
+    image: "/images/3.jpeg",
   },
   "product3": {
     id: "404812c8-d734-4721-a14b-f9d63c767cec",
     name: "Fresas con crema 16oz",
     detail:"Toppings adicionales: Oreo, Cobertura de chocolate, Brownie, Arequipe.",
     price: 11.000,
-    image: "/images/2.jpeg",
+    image: "/images/3.jpeg",
   },
   "product4": {
     id: "981fc573-c999-4dbb-8653-0b991ec2d45a",
