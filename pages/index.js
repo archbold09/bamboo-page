@@ -25,7 +25,7 @@ const Home = ({ productList }) => {
               />
             </figure>
             <div className="flex-col justify-center w-64 items-center">
-              <h1 className="text-xl font-extrabold leading-none pt-2 tracking-wide text-gray-900">
+              <h1 className="text-xl font-extrabold leading-none pt-2 tracking-wide text-gray-800">
                 Bambo
               </h1>
               <p className="text-xl font-medium leading-none pt-2 tracking-wide text-gray-800">
@@ -35,18 +35,19 @@ const Home = ({ productList }) => {
           </div>
         </section>
 
-        <section className="bg-green-100 my-6 px-3 border-2 border-green-200 border-solid rounded-lg">
+        <section className="my-6 px-3 border-2 border-green-200 border-solid rounded-lg">
+        {/* <section className="bg-green-100 my-6 px-3 border-2 border-green-200 border-solid rounded-lg"> */}
           <div className="container mx-auto">
-            <h4 className="text-center text-3xl my-0 font-extrabold text-gray-900">
+            <h4 className="text-center text-3xl my-1 font-extrabold text-gray-800">
               Productos
             </h4>
-            <div className="flex justify-center items-center mx-2 flex-wrap">
+            <div className="flex justify-center items-center mx-4 mb-4 flex-wrap">
               {productList.map((product) => (
-                <div className="max-w-sm w-64 h-auto rounded overflow-hidden shadow-lg mx-2 my-2 text-center transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80 transition ease-in-out duration-200 text-gray-900">
+                <div className="max-w-sm 1/4 h-auto rounded overflow-hidden shadow-lg mx-2 my-2 text-center transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80 transition ease-in-out duration-200 text-gray-800 animate__animated animate__fadeInBottomRight">
                   <div className="bg-green-100">
                     <figure className="rounded-lg">
                       <img
-                        className="w-full px-4 py-4 object-cover h-56"
+                        className="w-full px-4 py-4 object-cover h-64"
                         src={product.image}
                         alt="cakes-image"
                       />
@@ -56,11 +57,14 @@ const Home = ({ productList }) => {
                     <h4 className="font-bold text-lg mb-2 font-extrabold text-gray-800">
                       {product.name}
                     </h4>
+                    <p class="font-light text-gray-700">
+                      {product.detail}
+                    </p>
                     <p class="font-extrabold text-gray-700">
-                      Precio: ${product.price}
+                      <span className="font-bold text-gray-700">Precio:</span> ${product.price}
                     </p>
                   </div>
-                  <div className="px-6 pt-4 pb-2 bg bg-white ">
+                  {/* <div className="px-6 pt-4 pb-2 bg bg-white ">
                     <Link
                       href="/product/[product.link]"
                       as={`/product/${product.id}`}
@@ -69,7 +73,7 @@ const Home = ({ productList }) => {
                         Ver más
                       </button>
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               ))}
             </div>
@@ -79,19 +83,19 @@ const Home = ({ productList }) => {
         <section className="flex justify-center items-center">
           <div className="border border-gray-400 border-gray-400 bg-white rounded-b rounded-r p-4 flex flex-col justify-center items-center leading-normal mb-8">
             <div>
-              <h6 className="text-gray-900 font-bold text-xl mb-2 italic">
-                "Disfruta lo diferencia"
+              <h6 className="text-gray-800 font-bold text-xl mb-2 italic">
+                "Disfruta la diferencia"
               </h6>
               <p className="text-gray-700 text-base mb-3">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </p>
               <div>
                 <ul>
-                  <li className="text-gray-900">
+                  <li className="text-gray-800">
                     {" "}
                     <i className="mdi mdi-phone"></i> <span>350541245</span>{" "}
                   </li>
-                  <li className="text-gray-900">
+                  <li className="text-gray-800">
                     {" "}
                     <i className="mdi mdi-email"></i>{" "}
                     <span>bambo@email.com</span>{" "}
@@ -103,7 +107,7 @@ const Home = ({ productList }) => {
                 <ul className="flex justify-between items-center">
                   <li className="mx-1 my-1">
                     {" "}
-                    <span className="text-left text-gray-900 font-bold ">
+                    <span className="text-left text-gray-800 font-bold ">
                       Métodos de pago
                     </span>{" "}
                   </li>
