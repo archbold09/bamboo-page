@@ -41,101 +41,37 @@ const Home = ({ productList }) => {
               Productos
             </h4>
             <div className="flex justify-center items-center mx-2 flex-wrap">
-              <div className="max-w-sm w-64 rounded overflow-hidden shadow-lg mx-2 my-2 text-center transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80 transition ease-in-out duration-200 text-gray-900">
-                <div className="bg-green-100">
-                  <figure className="rounded-lg">
-                    <img
-                      className="w-full px-4 py-4 object-cover"
-                      src={productList.image}
-                      alt="cakes-image"
-                    />
-                  </figure>
+              {productList.map((product) => (
+                <div className="max-w-sm w-64 rounded overflow-hidden shadow-lg mx-2 my-2 text-center transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80 transition ease-in-out duration-200 text-gray-900">
+                  <div className="bg-green-100">
+                    <figure className="rounded-lg">
+                      <img
+                        className="w-full px-4 py-4 object-cover"
+                        src={product.image}
+                        alt="cakes-image"
+                      />
+                    </figure>
+                  </div>
+                  <div className="px-6 py-4 bg-white bg-white">
+                    <h4 className="font-bold text-xl mb-2 font-extrabold text-gray-900">
+                      {product.name}
+                    </h4>
+                    <p class="font-extrabold text-gray-700">
+                      Precio: ${product.price}
+                    </p>
+                  </div>
+                  <div className="px-6 pt-4 pb-2 bg bg-white ">
+                    <Link
+                      href="/product/[product.link]"
+                      as={`/product/${product.id}`}
+                    >
+                      <button className="bg-green-200 rounded-full px-3 py-2 font-semibold text-green-900 mr-2 mb-2">
+                        Ver más
+                      </button>
+                    </Link>
+                  </div>
                 </div>
-                <div className="px-6 py-4 bg-white bg-white">
-                  <h4 className="font-bold text-xl mb-2 font-extrabold text-gray-900">
-                    {productList.name}
-                  </h4>
-                  <p class="font-extrabold text-gray-700">
-                    Precio: ${productList.price}
-                  </p>
-                </div>
-                <div className="px-6 pt-4 pb-2 bg bg-white ">
-                  <Link href="/product/[productList.link]" as={`/product/${productList.id}`}>
-                    <button className="bg-green-200 rounded-full px-3 py-2 font-semibold text-green-900 mr-2 mb-2">
-                      Ver más
-                    </button>
-                  </Link>
-                </div>
-              </div>
-              {/* 
-              <div className="max-w-sm w-64 rounded overflow-hidden shadow-lg mx-2 my-2 text-center transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80 transition ease-in-out duration-200 text-gray-900">
-                <div className="bg-green-100">
-                  <figure className="rounded-lg">
-                    <img
-                      className="w-full px-4 py-4 object-cover"
-                      src="/images/cakes.jpeg"
-                      alt="cakes-image"
-                    />
-                  </figure>
-                </div>
-                <div className="px-6 py-4 bg-white">
-                  <h4 className="font-bold text-xl mb-2 font-extrabold text-gray-900">
-                    CUPCAKES
-                  </h4>
-                  <p class="font-extrabold text-gray-700">Precio: $16.000</p>
-                </div>
-                <div className="px-6 pt-4 pb-2 bg-white ">
-                  <button className="bg-green-200 rounded-full px-3 py-2 font-semibold text-green-900 mr-2 mb-2">
-                    Ver más
-                  </button>
-                </div>
-              </div>
-
-              <div className="max-w-sm w-64 rounded overflow-hidden shadow-lg mx-2 my-2 text-center transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80 transition ease-in-out duration-200 text-gray-900">
-                <div className="bg-green-100">
-                  <figure className="rounded-lg">
-                    <img
-                      className="w-full px-4 py-4 object-cover"
-                      src="/images/cakes.jpeg"
-                      alt="cakes-image"
-                    />
-                  </figure>
-                </div>
-                <div className="px-6 py-4 bg-white">
-                  <h4 className="font-bold text-xl mb-2 font-extrabold text-gray-900">
-                    CUPCAKES
-                  </h4>
-                  <p class="font-extrabold text-gray-700">Precio: $16.000</p>
-                </div>
-                <div className="px-6 pt-4 pb-2 bg-white ">
-                  <button className="bg-green-200 rounded-full px-3 py-2 font-semibold text-green-900 mr-2 mb-2">
-                    Ver más
-                  </button>
-                </div>
-              </div>
-
-              <div className="max-w-sm w-64 rounded overflow-hidden shadow-lg mx-2 my-2 text-center transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-80 transition ease-in-out duration-200 text-gray-900">
-                <div className="bg-green-100">
-                  <figure className="rounded-lg">
-                    <img
-                      className="w-full px-4 py-4 object-cover"
-                      src="/images/cakes.jpeg"
-                      alt="cakes-image"
-                    />
-                  </figure>
-                </div>
-                <div className="px-6 py-4 bg-white">
-                  <h4 className="font-bold text-xl mb-2 font-extrabold text-gray-900">
-                    CUPCAKES
-                  </h4>
-                  <p class="font-extrabold text-gray-700">Precio: $16.000</p>
-                </div>
-                <div className="px-6 pt-4 pb-2 bg-white ">
-                  <button className="bg-green-200 rounded-full px-3 py-2 font-semibold text-green-900 mr-2 mb-2">
-                    Ver más
-                  </button>
-                </div>
-              </div> */}
+              ))}
             </div>
           </div>
         </section>
