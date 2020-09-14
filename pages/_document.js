@@ -16,7 +16,7 @@ class MyDocument extends Document {
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
           />
            {/** Title */}
-           <title>Bambo - Barranquilla</title>
+           <title>Bamboo - Barranquilla</title>
         </Head>
         <body className="">
           <Main />
