@@ -26,17 +26,17 @@ const Header = () => {
           </div>
           <div className="flex items-center">
             <ul className="flex">
-              <a href="#">
+              <a target="blank" href="https://www.instagram.com/isbamboo_">
                 <li className="border-2 border-green-300 py-1 px-2 mx-1 my-1 rounded-full hvr-float-shadow text-gray-800">
                   <i className="text-lg mdi mdi-instagram"></i>
                 </li>
               </a>
-              <a href="#">
+              <a target="blank" href="https://twitter.com/isbamboo_">
                 <li className="border-2 border-green-300 py-1 px-2 mx-1 my-1 rounded-full hvr-float-shadow text-gray-800">
                   <i className="text-lg mdi mdi-twitter"></i>
                 </li>
               </a>
-              <a href="#">
+              <a target="blank" href="https://www.facebook.com/IsBamboo_-1013805483278">
                 <li className="border-2 border-green-300 py-1 px-2 mx-1 my-1 rounded-full hvr-float-shadow text-gray-800">
                   <i className="text-lg mdi mdi-facebook"></i>
                 </li>
