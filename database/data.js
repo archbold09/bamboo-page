@@ -29,7 +29,7 @@ const data = {
   },
   "product5": {
     id: "6cf6fe50-d681-4523-9de9-82e6c03c37c0",
-    name: "Brownies x4",
+    name: "Brownies x6",
     detail:"Sabor: Oreo o Milo",
     price: "11.000",
     image: "/images/5.jpeg",
