@@ -126,19 +126,19 @@ const Home = ({ productList }) => {
                 Información
               </h6>
               <p className="text-gray-700 text-base mb-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Coloca Domicilios a Barranquilla y Soledad 📍
               </p>
               <div>
                 <ul>
                   <li className="text-gray-800">
                     {" "}
-                    <i className="mdi mdi-phone"></i> <span>350541245</span>{" "}
+                    <i className="mdi mdi-phone"></i><a className="text-gray-800 font-bold py-1 px-3 rounded inline-flex items-center" target="blank" href="tel:3015320181"><span>301 5320181</span></a> {" "}
                   </li>
-                  <li className="text-gray-800">
+                  {/* <li className="text-gray-800">
                     {" "}
                     <i className="mdi mdi-email"></i>{" "}
                     <span>bambo@email.com</span>{" "}
-                  </li>
+                  </li> */}
                   <li></li>
                 </ul>
               </div>
