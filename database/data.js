@@ -20,13 +20,13 @@ const data = {
     price: "11.000",
     image: "/images/3.jpeg",
   },
-  "product4": {
-    id: "981fc573-c999-4dbb-8653-0b991ec2d45a",
-    name: "Cookies chips",
-    detail:"Galletas con chips de chocolate.",
-    price: "10.000",
-    image: "/images/4.jpeg",
-  },
+  // "product4": {
+  //   id: "981fc573-c999-4dbb-8653-0b991ec2d45a",
+  //   name: "Cookies chips",
+  //   detail:"Galletas con chips de chocolate.",
+  //   price: "10.000",
+  //   image: "/images/4.jpeg",
+  // },
   "product8": {
     id: "6cf6fe50-d681-4523-9de9-82e6c03c37c0",
     name: "Brownies x4",
@@ -48,12 +48,12 @@ const data = {
     price: "17.000",
     image: "/images/4.jpeg",
   },
-  "product8": {
-    id: "a0038a80-7b5c-4971-977c-1ffe498cd7c9",
-    name: "Cupcakes x6",
-    price: "17.000",
-    image: "/images/7.jpeg",
-  },
+  // "product8": {
+  //   id: "a0038a80-7b5c-4971-977c-1ffe498cd7c9",
+  //   name: "Cupcakes x6",
+  //   price: "17.000",
+  //   image: "/images/7.jpeg",
+  // },
 };
 
 export default data;
