@@ -4,7 +4,7 @@ const data = {
     name: "Cookies letters",
     detail:"Galletas personalizadas con cobertura de chocolate.",
     price: "8.000",
-    image: "/images/1.jpeg",
+    image: "/images/5.jpeg",
   },
   "product2": {
     id: "404812c8-d734-4721-a14b-f9d63c767cec",
@@ -46,7 +46,7 @@ const data = {
     name: "Mini chesscakes",
     detail:"Mini chesscakes con frosting de mantequilla: Oreo, Fresa",
     price: "17.000",
-    image: "/images/6.jpeg",
+    image: "/images/1.jpeg",
   },
 };
 
