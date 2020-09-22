@@ -15,6 +15,8 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
           />
+           {/** Google verification Token */}
+           <meta name="google-site-verification" content="hf-ex9RKSMnDDHWbcDD1WKC6-VL5-Fb-3v2lFze300g" />
            {/** Title */}
            <title>Bamboo - Barranquilla</title>
         </Head>
